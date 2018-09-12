@@ -42,7 +42,6 @@ type packageEqualDirVisitor struct {
 	baseAddVisitor
 
 	filename string
-	pkg      *proto.Package
 }
 
 func (v *packageEqualDirVisitor) OnStart(descriptor *proto.Proto) error {
