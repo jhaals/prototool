@@ -80,6 +80,7 @@ var (
 		serviceNamesCapitalizedLinter,
 		syntaxProto3Linter,
 		wktDirectlyImportedLinter,
+		packagesEqualDirLinter,
 	}
 
 	// DefaultLinters is the slice of default Linters.
