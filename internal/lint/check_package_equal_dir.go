@@ -35,9 +35,7 @@ var packagesEqualDirLinter = NewLinter(
 )
 
 func checkPackageEqualDir(add func(*text.Failure), dirPath string, descriptors []*proto.Proto) error {
-	runVisitor(&packageEqualDirVisitor{baseAddVisitor: newBaseAddVisitor(add)}, descriptors)
-	return nil
-
+	return runVisitor(&packageEqualDirVisitor{baseAddVisitor: newBaseAddVisitor(add)}, descriptors)
 }
 
 type packageEqualDirVisitor struct {
